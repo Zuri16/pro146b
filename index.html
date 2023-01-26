@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #84ffcf">
+
+        <!--Camera-->
+        <a-entity position="0 6 0">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-plane position="1 -3 -16" width="30" height="30" rotation="-90 0 0" color="#155b54"></a-plane>
+        <!--Cuerpo-->
+        <a-box position="0.8 4.8 -8.6" width="3.6" height="4" color="#7eea29" rotation="0 0 0"> </a-box>
+        <a-box position="0.8 4.8 -7.7" width="3.6" height="4" color="#7eea29" rotation="0 0 0"> </a-box>
+        <!--Pies-->
+        <a-cylinder position="-0.3 1.4 -8" radius="0.5" height="3" color="#ffa806" ></a-cylinder>
+        <a-cylinder position="2 1.4 -8" radius="0.5" height="3" color="#ffa806" ></a-cylinder>
+        <a-cone position="-0.3 0 -8" radiusBottom="1.2" radiusTop="0.3" height="3"color="#29eabe"></a-cone>
+        <a-cone position="2 0 -8" radiusBottom="1.2" radiusTop="0.3" height="3"color="#29eabe"></a-cone>
+        <!--Hombros, brazos-->
+        <a-sphere position="-1.6 7 -8" radius="0.9 " color="#ea295e"></a-sphere>
+        <a-sphere position="3.3 7 -8" radius="0.9 " color="#ea295e"></a-sphere>
+        <a-cylinder position="-2.1 5.4 -8" radius="0.3" height="1.7" color="#ffa806" rotation="0 0 -18"></a-cylinder>
+        <a-cylinder position="3.8 5.4 -8" radius="0.3" height="1.7" color="#ffa806" rotation="0 0 18"></a-cylinder>
+        <a-sphere position="-2.6 4.2 -8" radius="0.6 " color="#ea295e"></a-sphere>
+        <a-sphere position="4.2 4.2 -8" radius="0.6 " color="#ea295e"></a-sphere>
+        <a-cylinder position="-2.4 3 -8" radius="0.3" height="1.7" color="#ffa806" rotation="0 0 8"></a-cylinder>
+        <a-cylinder position="4.1 3 -8" radius="0.3" height="1.7" color="#ffa806" rotation="0 0 -8"></a-cylinder>
+        <!--Manos-->
+        <a-dodecahedron position="-2.2 2 -8"  radius="0.8" rotation="100 0 0" color="#f6002a"></a-dodecahedron>
+        <a-dodecahedron position="4 2 -8"  radius="0.8" rotation="100 0 0" color="#f6002a"></a-dodecahedron>
+        <!--Cara-->
+        <a-cylinder position="0.9 6.9 -8.4" radius="0.6" height="0.4" color="#81ff04" rotation="0 0 0"></a-cylinder>
+        <a-box position="0.8 8.3 -8" width="3" height="2.4" color="orange" rotation="0 0 0"> </a-box>
+        <a-circle position="0.1 8.3 -7.4" radius="0.5" color="#b2fff7"  rotation="0 0 18"></a-circle>
+        <a-circle position="1.5 8.3 -7.4" radius="0.5" color="#b2fff7"  rotation="0 0 18"></a-circle> 
+
+        <a-circle position="0.1 8.3 -7.3" radius="0.2" color="#000000"  rotation="0 0 18" 
+         animation="property:position; from:0.1 8.3; -7.3 to: 0.4 8.3 -7.3; dir:alternate; loop: true; dur: 1000"></a-circle>
+
+        <a-circle position="1.5 8.3 -7.3" radius="0.2" color="#000000"  rotation="0 0 18"></a-circle> 
+
+    </a-scene>
+</body>
+
+</html>
